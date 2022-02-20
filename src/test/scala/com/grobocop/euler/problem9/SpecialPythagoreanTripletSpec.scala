@@ -8,7 +8,7 @@ class SpecialPythagoreanTripletSpec extends AnyFlatSpec {
   it should "return 31875000" in {
     val result = SpecialPythagoreanTriplet()
 
-    assert(result === result)
+    assert(result === 31875000)
   }
 }
 

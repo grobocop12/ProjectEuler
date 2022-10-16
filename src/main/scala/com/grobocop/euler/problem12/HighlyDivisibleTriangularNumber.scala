@@ -12,8 +12,7 @@ object HighlyDivisibleTriangularNumber {
 
       loop(0, 1)
     }
-    val n = triangularNumbers.find(howManyDivisors(_, primes) > 500).get
-    howManyDivisors(n, primes)
+    triangularNumbers.find(howManyDivisors(_, primes) > 500).get
   }
 
   def howManyDivisors(n: Int, primes: LazyList[Int]): Int = {
